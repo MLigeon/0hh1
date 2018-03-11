@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
-import Square from '../components/Square'
+import Square from '../component/Square'
 import './Board.css'
 import { connect } from 'react-redux'
 
@@ -35,20 +35,9 @@ export class Board extends PureComponent {
   }
 }
 
-export default Board
-// src/containers/Board.js
-
-// Somewhere at the top, import connect:
-import { connect } from 'react-redux'
 
 
-// ...
 
-// At the bottom of the file, connect your component:
-
-export default connect()(Board)
-
-// At the bottom of the file, where you connect your component:
 const mapStateToProps = (reduxState) => {
   // return an object with the prop names (keys) and prop values
   // taken from the reduxState (values)
@@ -59,4 +48,5 @@ const mapStateToProps = (reduxState) => {
 
 // Then pass it to connect:
 export default connect(mapStateToProps)(Board)
-const mapStateToProps = ({ board }) => ({ board })
+
+// ...

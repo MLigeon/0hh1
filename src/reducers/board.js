@@ -1,13 +1,16 @@
+
 const initialState = [
-  [
+[
   [0,0,0,0,0,0],
   [0,0,0,0,0,0],
   [0,0,0,0,0,0],
   [0,0,0,0,0,0],
   [0,0,0,0,0,0],
   [0,0,0,0,0,0]
+  ]
 ]
 
-export default (state = [], { type, payload } = {}) => {
+
+export default function(state = [], type, payload = {}) {
   return state
 }
